@@ -25,11 +25,11 @@ spring:
           uri: lb://justificativo-service
           predicates:
             - Path=/justificativo/**
-        - id: pet-service
-          uri: lb://pet-service
+        - id: horas-service
+          uri: lb://horas-service
           predicates:
-            - Path=/pet/**
-        - id: pet-service
-          uri: lb://pet-service
+            - Path=/horas/**
+        - id: reporte-service
+          uri: lb://reporte-service
           predicates:
-            - Path=/pet/**    
+            - Path=/reporte/**    
