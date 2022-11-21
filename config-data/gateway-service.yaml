@@ -32,4 +32,12 @@ spring:
         - id: reporte-service
           uri: lb://reporte-service
           predicates:
-            - Path=/reporte/**    
+            - Path=/reporte/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+            - GET
+            - POST    
